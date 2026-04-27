@@ -16,11 +16,11 @@ registry = { path = "../registry" }
 jmap_proto = { path = "../jmap-proto" }
 imap_proto = { path = "../imap-proto" }
 sieve-rs = { version = "0.7", features = ["rkyv", "serde"] }
-mail-parser = { version = "0.11", features = ["full_encoding"] } 
+mail-parser = { version = "0.11", features = ["full_encoding"] }
 mail-builder = { version = "0.4" }
 mail-auth = { version = "0.8" }
 smtp-proto = { version = "0.2", features = ["rkyv"] }
-dns-update = { version = "0.2.1" }
+dns-update = { git = "https://github.com/ivan-kiselev/dns-update.git", branch = "main" }
 calcard = { version = "0.3", features = ["rkyv"] }
 ahash = { version = "0.8.2", features = ["serde"] }
 parking_lot = "0.12.1"

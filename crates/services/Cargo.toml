@@ -19,7 +19,7 @@ registry = { path =  "../registry" }
 smtp-proto = { version = "0.2", features = ["rkyv", "serde"] }
 tokio = { version = "1.47", features = ["rt"] }
 mail-parser = { version = "0.11", features = ["full_encoding", "rkyv"] }
-mail-builder = { version = "0.4" } 
+mail-builder = { version = "0.4" }
 calcard = { version = "0.3", features = ["rkyv"] }
 chrono = { version = "0.4", features = ["unstable-locales"] }
 serde = { version = "1.0", features = ["derive"]}
@@ -34,7 +34,7 @@ sha2 = "0.11"
 reqwest = { version = "0.13", default-features = false, features = ["rustls", "http2"]}
 base64 = "0.22"
 compact_str = "0.9.0"
-dns-update = { version = "0.2.1" }
+dns-update = { git = "https://github.com/ivan-kiselev/dns-update.git", branch = "main" }
 
 [dev-dependencies]
 
